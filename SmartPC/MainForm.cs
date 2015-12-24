@@ -74,6 +74,7 @@ namespace SmartPC
             btnNext.Text = $">>{next}";
 
             var list = ParameterList.Skip(4 * (m_PageIndex - 1)).Take(tlp.RowCount).ToList();
+            
             tlp.Controls.Clear();
             for (int r = 0; r < list.Count; r++)
             {
@@ -82,7 +83,7 @@ namespace SmartPC
                 tlp.Controls.Add(InitializeLabel(list[r].DefaultValue), 2, r);
                 tlp.Controls.Add(InitializeLabel(list[r].LimitRange), 3, r);
                 tlp.Controls.Add(InitializeTextBox(list[r], "ParameterValue"), 4, r);
-            }
+            }            
         }
 
         private TextBox InitializeTextBox<T>(T m_Source, string m_ParameterName) where T : INotifyPropertyChanged

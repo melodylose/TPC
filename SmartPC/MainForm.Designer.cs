@@ -30,7 +30,7 @@
         {
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
-            this.tlp = new System.Windows.Forms.TableLayoutPanel();
+            this.tlp = new DBLayoutPanel();
             this.btnOK = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -103,7 +103,7 @@
         #endregion
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.TableLayoutPanel tlp;
+        private DBLayoutPanel tlp;
         private System.Windows.Forms.Button btnOK;
     }
 }
